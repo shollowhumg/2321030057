@@ -1,0 +1,12 @@
+body{
+    margin:0px;
+}
+
+
+ .box{
+ border:5px solid;
+ padding-top: 60px;
+ padding-left: 80px;
+ padding-bottom:40px;
+ padding-right:100px;
+ }
