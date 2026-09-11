@@ -1,67 +1,164 @@
 <!DOCTYPE html>
-<html >
+<html>
+
 <head>
-   
+
     <title>Đào tạo</title>
+    <link rel="stylesheet" href="test.css">
     <style>
-        .Menu{
-            background-color:#2fa4e7 ;
-        }
-        .muc{
-            color:aliceblue;
-            padding:15px;
-        }
 
-        .danh-sach-muc{
-            list-style: none;
-            margin:0px;
-            display:flex;
-        }
-
-        a{
-            color:white;
-
-        }
-
-        main{
-            display: flex;
-            
-        }
-        .khoi-trai{
-            
-            width: 20%;
-            height: 500px;
-        }
-        .khoi-phai{
-            background-color: red;
-             width: 80%;
-            height: 500px;
-        }
-          
     </style>
 </head>
+
 <body>
-    
-        <!-- Danh mục -->
-         <nav class="Menu">
-            <ul class="danh-sach-muc">
-                <li class="muc"><a href="#">thực tập,Dồ án</a></li>
-                <li class="muc" ><a href="#">Thủ tục một cửa</a></li>
-                <li class="muc" ><a href="#"> của Online</a></li>
-                <li class="muc" ><a href="#"> HUMG</a></li>
-            </ul>
-         </nav>
+
+    <!-- Danh mục -->
+    <nav class="Menu">
+        <ul class="danh-sach-muc">
+            <li class="muc"><a href="#">Thực tập,Dồ án</a></li>
+            <li class="muc"><a href="#">Thủ tục một cửa</a></li>
+            <li class="muc"><a href="#"> Một của Online</a></li>
+            <li class="muc"><a href="#"> HUMG</a></li>
+        </ul>
+    </nav>
     <!-- noi dung chinh  -->
-     <main>
-        <div class="khoi-trai">Trai</div>
+    <main>
+        <div class="khoi-trai">
+            <div class="dang-nhap">
+
+                <form action="">
+                    <div class="thong-tin">
+                        <p>Tài khoản</p>
+                        <input type="text">
+
+                    </div>
+                    <div class="thong-tin">
+                        <p>Mật khẩu</p>
+                        <input type="password">
+                    </div>
+
+                    <div class="quen-mk">
+                        <i>
+                            <a class="lien-ket-mk" href="#">quên mật khẩu</a>
+                        </i>
+                    </div>
+                    <div>
+                        <button class="dang-nhap1">Đăng nhập</buttom>
+
+                            <button class="dang-nhap1"> 365</buttom>
+                    </div>
 
 
+                </form>
+            </div>
+        </div>
 
 
+        <div class="khoi-phai">
+            <!-- Tin tức -->
+            <div class="tin">
+                <!-- Tin trên -->
+                <div class="tin-tren">
+                    <h3 class="tieu-de">Tin tức</h3>
+                    <p>
+                        <a class="xem-tiep" href="">
+                            Xem tiếp >
+                        </a>
+                    </p>
+                </div>
+                <!-- Danh sách tin -->
+                <div class="danh-sach-tin">
+                    <div class="bai-viet">
+                        <div class="bai-viet-khoi-anh">
+                            <img src="../images/no_img.png" alt="">
+                        </div>
+                        <div class="bai-viet-thoi-gian">
+                            <p>05/05/2026</p>
+                        </div>
+                        <div>
+                            <p>Về việc đăng ký khối lượng học tập học kỳ phụ năm học 2025-2026</p>
+                        </div>
+                    </div>
+                    <div class="bai-viet">
+                        <div class="bai-viet-khoi-anh">
+                            <img src="../images/no_img.png" alt="">
+                        </div>
+                        <div class="bai-viet-thoi-gian">
+                            <p>05/05/2026</p>
+                        </div>
+                        <div>
+                            <p>Về việc đăng ký khối lượng học tập học kỳ phụ năm học 2025-2026</p>
+                        </div>
+                    </div>
+                    <div class="bai-viet">
+                        <div class="bai-viet-khoi-anh">
+                            <img src="../images/no_img.png" alt="">
+                        </div>
+                        <div class="bai-viet-thoi-gian">
+                            <p>05/05/2026</p>
+                        </div>
+                        <div>
+                            <p>Về việc đăng ký khối lượng học tập học kỳ phụ năm học 2025-2026</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        <div class="khoi-phai">Phai</div>
-     </main>
+            <!-- Thông báo -->
+            <div class="tin">
+                <div class="tin-tren">
+                    <h3 class="tieu-de">Tin tức</h3>
+                    <p>
+                        <a class="xem-tiep" href="">
+                            Xem tiếp >
+                        </a>
+                    </p>
 
-    
+                </div>
+                <!-- danh sacnh tin  -->
+                <div>
+                    <div class="danh-sach-tin">
+                        <div class="bai-viet">
+                            <div class="bai-viet-khoi-anh">
+                                <img src="../images/no_img.png" alt="">
+                            </div>
+                            <div class="bai-viet-thoi-gian">
+                                <p>05/05/2026</p>
+                            </div>
+                            <div>
+                                <p>Về việc đăng ký khối lượng học tập học kỳ phụ năm học 2025-2026</p>
+                            </div>
+                        </div>
+                        <div class="bai-viet">
+                            <div class="bai-viet-khoi-anh">
+                                <img src="../images/no_img.png" alt="">
+                            </div>
+                            <div class="bai-viet-thoi-gian">
+                                <p>05/05/2026</p>
+                            </div>
+                            <div>
+                                <p>Về việc đăng ký khối lượng học tập học kỳ phụ năm học 2025-2026</p>
+                            </div>
+                        </div>
+                        <div class="muc-tin">ghg</div>
+                    </div>
+
+                    <!-- Hướng dẫn -->
+                    <div class="tin">
+                        <div class="tin-tren">
+                            <h3 class="tieu-de">Tin tức</h3>
+                            <p>
+                                <a class="xem-tiep" href="">
+                                    Xem tiếp >
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- kết thúc khối trái -->
+            </div>
+    </main>
 </body>
+
 </html>
