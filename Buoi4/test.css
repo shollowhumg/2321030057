@@ -1,10 +1,15 @@
 .Menu {
-    background-color: blue;
+    background-color: rgb(8, 105, 240);
 }
 
 .muc {
     color: aliceblue;
     padding: 15px;
+}
+
+.nhap{
+    border-radius: 10px;
+    
 }
 
 .danh-sach-muc {
@@ -16,7 +21,11 @@
     gap: 10px;
 
 }
-
+.lien-ket-mk{
+    color:#2fa4e7;
+    display: flex;
+    justify-content:flex-end;
+}
 a {
     color: white;
     text-decoration: none;
@@ -32,11 +41,18 @@ main {
 .khoi-trai {
 
     width: 20%;
-    height: 500px;
+    height: 1000px;
     /* vẽ viền dùng boder 
             độ dày -dường viền -màu sắc */
-    border-right: 1px solid #2fa4e7;
+    border-right: 2px solid #2fa4e7;
 
+
+}
+.trang-chu{
+   
+   margin-top:20px;
+   font-size: 17px;
+   color:rgb(26, 114, 237);
 
 }
 
@@ -63,7 +79,7 @@ input {
     width: 95%;
     height: 300px;
     margin: 20px auto;
-    border: 1px solid red;
+    border: 1px solid rgb(0, 149, 255);
     border-radius: 10px;
 }
 
@@ -113,8 +129,12 @@ button {
 }
 
 .bai-viet {
+    flex-shrink: 0;
+    
+   
     width: 25%;
-    margin-right: 20px;
+
+    margin-right:20px;
 }
 
 .bai-viet-khoi-anh {
@@ -137,6 +157,28 @@ img {
     text-decoration: none;
 }
 
-.danh-sach-tin{
-    border-left: 1px solid rgb(8, 38, 103);
+.thong-tin {
+    
+
+ margin:10px;
+ 
+}
+
+.muc-tin{
+    border-left:1px solid grey;
+}
+
+.test{
+   
+    
+}
+
+video {
+  
+  height: auto;
+  object-fit: cover; 
+  display: block;
+   width: 20vh;
+ height: 20vh;
+border-radius: 10px;
 }
