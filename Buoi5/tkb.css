@@ -1,0 +1,131 @@
+.danh-sach-muc {
+    list-style: none;
+    margin: 0px;
+    display: flex;
+    padding: 10px;
+    /* xét các đối tượng tự động khoảng cách */
+    gap: 10px;
+    
+    
+    
+   
+}
+
+.muc {
+    color: aliceblue;
+    padding: 10px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    style;
+}
+
+.menu {
+    background-color: rgb(47, 164, 231);
+    
+   
+}
+
+body{
+    margin: 0;
+}
+.khoi-trai{
+ width:20%;
+border-right: 2px solid #2fa4e7;
+    
+}
+.khoi-phai{
+    
+    width:80%;
+    
+    
+}
+
+main{
+     display:flex;
+     
+}
+.bangtk{
+    width: 97%;
+    margin: auto;
+    border-bottom: 1px solid #2fa4e7;
+   
+    
+    
+}
+}
+.test{
+    border-bottom: 2px solid #2fa4e7;
+}
+
+.tkb{
+    border: 1px solid #2fa4e7;
+    border-radius: 20px;
+    margin:10px;
+    overflow: hidden;
+}
+/*
+.ki{
+    border-radius: 2px;
+    
+    padding: 6px 12px;
+}*/
+.chon-ki{
+    
+    gap: 10px;
+   margin:10px;
+
+   
+    
+}
+
+.ki-tb{
+    
+    display: flex;
+    
+}
+
+select[name=ki]{
+    border-radius: 8px;
+    padding:5px 10px;
+    margin:5px;
+}
+
+select[name=tuan]{
+    border-radius: 8px;
+    padding:5px 110px;
+    margin:5px;
+}
+
+table.bang th,table.bang.tr{
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+}
+
+.bang{
+ 
+border-spacing: 0;
+  
+  
+ height: auto;  
+  
+  
+  width: 97%;
+  margin:20px ;
+ border-radius: 8px; 
+ overflow: hidden;
+ border: 1px solid #2fa4e7;
+
+ 
+  
+  
+  
+  
+}
+.mau{
+    background-color: #2fa4e7;
+    color:azure;
+}
+

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java jss</title>
+    
+</head>
+<body>
+    <!-- internal javascript  -->
+     <script>
+        document.writeln("hello <br> world<br>")
+
+
+        var tensv ="minhduc";
+        var tuoi = "21"
+        document.writeln(tensv + "<br>"+ tuoi +"<br>" );
+
+
+        var sothunhat = 10;
+        var sothuhai = 5;
+        //phettoan
+
+        var ketquat= sothunhat +sothuhai *5;
+        document.writeln("kết quả là "+ketquat +"<br>");
+
+        //tang giam don vi
+        // document.writeln(++ sothunhat +"<br>"); 
+
+        //gán biến suthunhat = sothunhat +so thuhai
+        sothunhat+=sothuhai
+        document.writeln( sothunhat);
+        //string
+        document.writeln( tensv.length);
+        document.writeln( "<br>");
+        //kiemtratontai
+        //indexof kiem tra bi tri xuat hien dau tien co thi la co cua vi tri ko thi(-1)
+        document.writeln(tensv.indexOf("a"));
+        document.writeln( "<br>");
+
+
+
+         document.writeln(tensv.includes("a"));
+         document.writeln( "<br>");
+
+         //replace
+         document.writeln( tensv.replace("minh", "le"));
+
+         document.writeln( "<br>");
+
+         //kiemtra ki thu bat dau
+         document.writeln( tensv.startsWith("minh"));
+
+         //viet hoa
+         document.writeln( "<br>");
+         document.writeln( tensv.toUpperCase());
+
+         //vietthuong
+         document.writeln( "<br>");
+         document.writeln( tensv.toLocaleLowerCase());
+
+         //date
+         var homNay = new Date();
+         document.writeln( "<br>");
+         document.writeln( homNay);
+         
+
+         //khaibao ngay thang
+         var ngay =new Date("10/10/2026");
+         document.writeln( "<br>");
+         document.writeln(ngay);
+
+         //lay nam
+        var nam = homNay.getFullYear();
+         document.writeln( "<br>");
+         document.writeln( nam);
+
+         //lay thang
+        var thang = homNay.getMonth() + 1 ;
+         document.writeln( "<br>");
+         document.writeln( thang);
+
+
+        //lay thu
+        var thu = homNay.getDay();
+         document.writeln( "<br>");
+         document.writeln( thu);
+
+          var namsinhcuat = nam - tuoi;
+        
+         document.writeln( "<br>");
+         document.writeln( "duc sinh nam " + namsinhcuat);
+
+         //Mảng
+         var mangso = [1 ,2 ,3 ,4, 5]
+         var mangten = ["ti" ,"teo","tin" ]
+         var manghonhop = ["tr", 21 , true ]
+         
+       
+        
+         document.writeln( "<br>");
+         document.writeln( mangso[1]);
+
+         document.writeln( "<br>");
+         document.writeln( mangten[1]);
+
+         document.writeln( "<br>");
+         document.writeln(manghonhop[1] );
+
+         //kiemtrado dai
+         document.writeln( "<br>");
+         document.writeln(mangso.length );
+
+
+         //join 
+         document.writeln( "<br>");
+         document.writeln(mangso.join("-") );
+
+
+         //gop mang 
+         var mang = mangso.concat(mangten, manghonhop)
+
+         document.writeln(mang);
+
+
+         //pop lay ra so cuoi cung
+
+         document.writeln( "<br>");
+         mangso.push(6);
+         document.writeln( mangso);
+
+
+         //reverse
+         document.writeln( "<br>");
+         document.writeln( mangso.reverse());
+
+
+        //dieukien
+        var diem =7
+        if (diem==4 ){
+            document.writeln("f");
+        }
+        else{
+            document.writeln("qua mon");
+        }
+
+
+         
+
+
+
+
+        
+
+
+        //dóiulieu
+        var a ="10";
+        var b = "5";
+        var tong = parseint(a) + parseint(b);
+        document.writeln("tongla "+ tong);
+
+     
+
+
+       
+
+
+
+
+
+
+        
+     </script>
+
+<!-- <script src="1.js"></script> -->
+
+
+
+</body>
+</html>
