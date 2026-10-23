@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 7 - JavaScript</title>
+</head>
+<body>
+   <!-- Internal Javascript  -->
+    <script>
+        // có thể thêm mã nguồn html vào trong Js
+        // lưu ý:html phải đặt trong cặp dấu " "
+       document.writeln("Hello <br> World!"); // Your JavaScript code here
+    //    tên cần nháy đôi
+       var tenSinhVien = "Ngoc Ha";
+    //    số ko cần nháy đuôi
+       var tuoi = 21;
+       document.writeln(tenSinhVien + "<br>" + tuoi + "<br>");  // chú í sai là sai hết
+       var soThuNhat = 10 ;
+       var soThuHai = 5 ;
+       // + - * / 
+       // % chia lấy phần dư
+       var ketQua = soThuNhat + soThuHai;
+       document.writeln("ket qua la" + ketQua + "<br>");
+       var ketQua = soThuNhat - soThuHai;
+       document.writeln("ket qua la" + ketQua + "<br>");
+       var ketQua = soThuNhat * soThuHai;
+       document.writeln("ket qua la" + ketQua + "<br>");
+       var ketQua = soThuNhat / soThuHai;
+       document.writeln("ket qua la" + ketQua + "<br>");
+       var ketQua = soThuNhat % soThuHai;
+       document.writeln("ket qua la" + ketQua + "<br>");
+
+       // ++ là cộng thêm 1
+       // -- là trừ đi 1
+       document.writeln(++soThuNhat + "<br>");
+    //    document.writeln(--soThuHai + "<br>");
+       document.writeln(--soThuNhat + "<br>");
+
+
+       // tương đương:soThuNhat = soThuNhat + soThuHai
+       soThuNhat+=soThuHai;
+       document.writeln(soThuNhat + "<br>");
+       soThuNhat-=soThuHai;
+       document.writeln(soThuNhat + "<br>");
+       soThuNhat*=soThuHai;
+       document.writeln(soThuNhat + "<br>");
+       soThuNhat/=soThuHai;
+       document.writeln(soThuNhat + "<br>");
+       soThuNhat%=soThuHai;
+       document.writeln(soThuNhat + "<br>");
+
+    // kiểu dữ liệu:string
+    // Number Số
+    // boolean: true/false
+     var a = "10";
+     var b = "5";
+     var c = "5.5";
+     // chuyển string thành number dùng: parseInt()
+     var tong = parseInt(a) + parseInt(b);
+     // số nguyên hoặc parsefloat() số thực
+     var tong = parseInt(a) + parseFloat(c);
+     document.writeln(tong);
+
+    //String
+    document.writeln("<br>");
+    // kiểm tra độ dài chuỗi length
+    document.writeln(tenSinhVien.length );
+    // nối chuỗi: +
+    // var tenSinhVien = "Ngoc Ha"
+    // kiểm tra tồn tại 
+    // indexOf : tìm vị trí xuất hiện đầu tiên (có vị trí /ko có -1)
+    document.writeln("<br>");
+    document.writeln(tenSinhVien.indexOf("a"));
+    // includes: kiểm tra xem từ có trong chuỗi ko? Có = true,ko = false
+    document.writeln("<br>");
+    document.writeln(tenSinhVien.includes("a"));
+    // replace: thay thế từ trong chuỗi
+    // tenSinhVien = tenSinhVien.replace("Ha","Hà");   thay đổi luôn giá trị của biến
+    document.writeln("<br>");
+    document.writeln(tenSinhVien.replace("Ha","Hà"));
+    // kiểm tra ký tự bắt đầu bằng từ gì: startsWith
+    document.writeln("<br>");
+    document.writeln(tenSinhVien.startsWith("Ngoc")); 
+    // viết in hoa tát cả: toUpperCase
+    document.writeln("<br>");
+    document.writeln(tenSinhVien.toUpperCase());
+    // viết in thường tất cả: toLowerCase
+    document.writeln("<br>");
+    document.writeln(tenSinhVien.toLowerCase());
+
+    // NaN: Not a Number ,kiểm tra xem có phải là số ko: isNaN()
+    // var a = "20";
+    // var so = 20;
+    // var kq = typeof();
+    // document.writeln(isNaN("abc"));  // true
+
+
+    //Date
+    var homNay = new Date();
+    document.writeln("<br>");
+    document.writeln(homNay);
+    // khai báo cụ thể định dạng tháng/ngày/năm
+    var ngay = new Date("10/20/2026");
+    document.writeln("<br>");
+    document.writeln(ngay);
+
+    // lấy năm 
+    var nam = homNay.getFullYear();
+    document.writeln("<br>");
+    document.writeln(nam);
+
+    // lấy tháng
+    var thang = homNay.getMonth() + 1; // tháng bắt đầu từ 0 nên cần cộng thêm 1
+    document.writeln("<br>");
+    document.writeln(thang);
+
+    // lấy ngày
+    var ngay = homNay.getDate();
+    document.writeln("<br>");
+    document.writeln(ngay);
+
+    // lấy thứ
+    var thu = homNay.getDay() + 1; // 0: chủ nhật, 1: thứ 2, 2: thứ 3, 3: thứ 4, 4: thứ 5, 5: thứ 6, 6: thứ 7
+    document.writeln("<br>");
+    document.writeln(thu);
+    
+    // tính năm sinh của Hà
+    var namSinhHa = nam - tuoi;
+    document.writeln("<br>");
+    document.writeln("Năm sinh của Hà là: " + namSinhHa);
+
+
+
+    // Mảng (array)
+    var mangSo = [1,2,3,4,5];
+    var mangTen = ["Ngoc Ha", "Thu Thuy", "Tuyet Mai","Hoai Phuong"];
+    var thongTin = ["Ngoc Ha", 21, "Ha Noi", true];
+
+
+    //lấy giá trị trong mảng 
+    document.writeln("<br>");
+    document.writeln(mangSo[2]);
+
+    document.writeln("<br>");
+    document.writeln(mangTen[1]);
+
+    document.writeln("<br>");
+    document.writeln(thongTin[0]);
+
+
+    // kiếm tra độ dài của mảng length,mảng chỉ lấy phần tử ko lấy dấu cách,
+    document.writeln("<br>");
+    document.writeln(mangSo.length);
+    document.writeln("<br>");
+    document.writeln(mangTen.length);
+    document.writeln("<br>");
+    document.writeln(thongTin.length);
+
+    // gộp mảng bằng concat()
+    var mang = mangSo.concat(mangTen, thongTin);
+    document.writeln("<br>");
+    document.writeln(mang);
+
+    //Join: nối các phần tử trong mảng thành chuỗi, có thể thêm dấu cách hoặc ký tự khác
+    document.writeln("<br>");
+    document.writeln(mangSo.join(" - "));
+
+    //pop: lấy ra số cuối cùng trong mảng và xóa đi phần tử đó
+    document.writeln("<br>");
+    document.writeln(mangSo.pop());
+
+    //push: thêm phần tử vào cuối mảng
+    document.writeln("<br>");
+    mangSo.push(6);
+    document.writeln(mangSo);
+
+    //reverse: đảo ngược mảng
+    document.writeln("<br>");
+    document.writeln(mangSo.reverse());
+
+    // var soThuNhat = 10 ;
+    // var soThuHai = 5 ;
+    // == so sánh bằng nhau
+    // != so sánh khác nhau
+    // > so sánh lớn hơn
+    // < so sánh nhỏ hơn
+    // >= so sánh lớn hơn hoặc bằng
+    // <= so sánh nhỏ hơn hoặc bằng
+
+    document.writeln("<br>");
+    document.writeln(soThuNhat == soThuHai);
+    document.writeln("<br>");
+    document.writeln(soThuNhat != soThuHai);
+    document.writeln("<br>");
+    document.writeln(soThuNhat > soThuHai);
+    document.writeln("<br>");
+    document.writeln(soThuNhat < soThuHai);
+    document.writeln("<br>");
+    document.writeln(soThuNhat >= soThuHai);
+    document.writeln("<br>");
+    document.writeln(soThuNhat <= soThuHai);
+    
+    //&&: và, ||: hoặc, !: phủ định
+    // true && true = true
+    // true && false = false
+    // false && true = false
+    // false && false = false
+    var d=15;
+    var e=5.5;
+    document.writeln("<br>");
+    document.writeln(soThuNhat > soThuHai && (d<e) );
+
+    // true || true = true
+    // true || false = true
+    // false || true = true
+    // false || false = false
+    document.writeln("<br>");
+    document.writeln((soThuNhat > soThuHai) || (d<e) );
+
+    // var thu = homNay.getDay();
+    document.writeln(thu);
+    if(thu==5){
+       document.writeln("Hôm nay là thứ 6");
+    }
+
+    else{
+         document.writeln("Hôm nay không phải thứ 6");
+    }
+
+    var diem =9;
+    if(diem<4){
+        document.writeln("Điểm F");
+    }
+    
+    else if(diem>=4 && diem<5){
+        document.writeln("Điểm D");
+    }
+    else if(diem>=5 && diem<7){
+        document.writeln("Điểm C");
+    }
+    else if(diem>=7 && diem<8){
+        document.writeln("Điểm B");
+    }
+    else if(diem>=8 && diem<=10){
+        document.writeln("Điểm A");
+    }
+    else{
+        document.writeln("Điểm không hợp lệ");
+    }
+    // 0->4:F
+    // 4->5:D
+    // 5->7:C
+    // 7->8:B
+    // 8->10:A
+
+
+    //object : var name={ }
+    var thongTinSinhVien={
+        hoTen:"Ngoc Ha",
+        tuoi: 21,
+        gioiTinh: true, // true:Nam ,false:Nữ
+        diaChi: {
+            thanhPho:"Ha Noi",
+            phuong:"Dong Ngac",
+            duong:"Le Van Hien"
+        }
+
+    };
+
+    var thongTinPhim = {
+        tenPhim:"Doremon",
+        daoDien:"abc",
+        nhaSanXuat:"cong ty abc",
+        namSanXuat:1999,
+        theLoai:"Hoat hinh",
+        quocGia:"Nhat Ban",
+        dienVien:{
+            dienVienChinh:[
+                "abc","xyz","def"
+
+            ],
+                
+            dienVienPhu:[
+                "abc","xyz","def"
+            ]
+        },
+    };
+    //lấy ra tên đạo diễn phim 
+     document.writeln("<br>");
+     document.writeln(thongTinPhim.daoDien);
+     // lấy diễn viên chính
+     document.writeln("<br>");
+     document.writeln(thongTinPhim.dienVien.dienVienChinh);
+     // lấy tên 1 diễn viên chính
+     document.writeln("<br>");
+     document.writeln(thongTinPhim.dienVien.dienVienChinh[2]);
+
+     //switch case
+     var d=new Date();
+     var theDay=d.getDay();
+     switch (theDay){
+        case 5:
+            document.writeln("Finally Friday"); // nếu là 5 in ra dòng này
+            break;
+        case 6:
+            document.writeln("Super Saturday");  // là 6 in ra dòng này
+            break;
+        case 0:
+            document.writeln("Sleepy Sunday");   // 0 in ra dòng này 
+            break;
+        default:
+            document.writeln("I'm looking forward to this weekend"); //nếu ko phải = 5,6,0 thì in ra dòng này
+        }
+    
+     // FOR:vòng lặp
+     for ( var index =1; index<=50; index++){
+        document.writeln("<br> Xin chào" + index +"<br>");
+     }
+
+     var danhSachSinhVien =["Thuy","Mai","Phuong","Ha"];
+    //  document.writeln("<br> Xin chào" + danhSachSinhVien[1]);
+
+     for(var i=0;i< danhSachSinhVien.length;i++){
+        // document.writeln("<br>"+ i+ "<br>");
+        // document.writeln("Xin chào"+danhSachSinhVien[i]);
+        if(danhSachSinhVien[i]=="Phuong"|| danhSachSinhVien[i]=="Thuy"){
+       document.writeln("xin chào"+danhSachSinhVien[i]);
+         }
+
+     }
+
+     
+
+
+
+     
+
+
+
+
+
+    
+    </script>
+    <!-- external JS -->
+     <!-- <script src="script.js"></script> (thẻ liên kết )-->
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buoi8</title>
+</head>
+<body>
+    <div>
+        Ho va ten:<input type="text" id="hovaten">
+
+    </div>
+    <div>
+        <button onclick="xinchao2"()">xinchao</button>"
+    </div>
+    <div>
+        ket qua:<input type="text" id="ketqua">
+    </div>
+<div>
+        Số thứ 1: <input type="number" id="soThuNhat">
+    </div>
+    <div>
+        Số thứ 2: <input type="number" id="soThuHai">
+    </div>
+    <div>
+        <button onclick="tinhTong()">Tính tổng</button>
+    </div>
+    <div>
+        Kết Quả: <input type="text" id="tong">
+    </div>
+    
+    <script>
+        function xinchao(){
+            var ten = document.getElementById("hovaten").value;
+            document.getElementById("ketqua").value="xin chao"+ ten ;
+        }
+        
+        function tinhTong() {
+            var soThuNhat = parseFloat(document.getElementById("soThuNhat").value) || 0;
+            var soThuHai = parseFloat(document.getElementById("soThuHai").value) || 0;
+            var tong = soThuNhat + soThuHai;
+            document.getElementById("tong").value = tong;
+        }
+        
+        /*//popup
+       alert("xinchao")
+
+        //comfilm
+        var r = confirm("press a bottom)")
+        if (r==true){
+            document.write("Ok")
+
+        }
+        else{
+            document.write("cancel!")
+        }*/
+
+        // promtbox
+        /*r = prompt("nhap ho , nhap ten");
+        document.write(r)*/
+
+        //funciton 
+       // de tao funciton dung cu phap
+       //funciton + ten
+       function xinchao(){
+         document.write("xin chao");
+       }
+
+       //ham co tham so
+       
+    function xinchao2(ten,tuoi){
+        document.write("xin chao" + ten +" " +tuoi );
+    }
+    xinchao2("duc",21);
+
+    function schunhat(dai,rong){
+        document.write("dientichla"+ (dai+rong)/2);
+
+    }
+    schunhat(4,5);
+
+
+    var danhsachsinhvien =["thuy","Duong","Viet","hue","thang"]
+    
+/*
+    for(var i=0;i< danhsachsinhvien.length; i++){
+         if(danhsachsinhvien[i]!="Viet")
+        document.write("<br> Xin chao" + danhsachsinhvien[i] );
+
+    }*/
+   
+
+    function timsv(ds,ten){
+        var cosinhvien=false;
+        for(var i =0;i<ds.length;i++){
+            if (ds[i]==ten){
+                cosinhvien=true;
+
+        
+
+            }
+        }
+        if (cosinhvien==true){
+            document.write("<br>cosv" +" "+ ten +"tronds");
+        }
+        else{
+            document.write("<br>kosv" +" "+ ten +"tronds");
+        }
+
+        
+    }
+    timsv(danhsachsinhvien,"huy")
+
+
+    </script>
+    
+</body>
+</html>
