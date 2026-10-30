@@ -18,16 +18,36 @@
         <h1>Che do sang</h1>
         <img src="mattroi.png" alt="'">
         <div>
-            <button onclick="doichedo"()>Doi Che Do</button>
+            <button onclick="doichedo()">Doi Che Do</button>
         </div>
     </div>
 
     <script>
-        function doihedo(){
+        function doichedo(){
+            if (document.getElementsByTagName("body")[0].style.backgroundColor == "black") {
+                
+            
+            //sanh
+            document.getElementsByTagName("body")[0].style.backgroundColor = "white";
+
+            document.getElementsByTagName("h1")[0].innerHTML = "Che do sang";
+
+            document.getElementsByTagName("h1")[0].style.color = "black";
+
+            document.getElementsByTagName("img")[0].src = "mattroi.png";
+
+                
+            }
+            //toi
+            else{
             document.getElementsByTagName("body")[0].style="background-color:black";
+
             document.getElementsByTagName("h1")[0].innerHTML = "che do toi";
-            document.getElementsByTagName("h1")[0].style = "color:whitle"
-            document.getElementsByTagName("h1")[0].src
+
+            document.getElementsByTagName("h1")[0].style = "color:white"
+
+            document.getElementsByTagName("img")[0].src ="mattrang.png"
+            }
         }
     </script>
 
