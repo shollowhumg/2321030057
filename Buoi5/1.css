@@ -51,6 +51,12 @@ header{
     border-radius: 20px;
     /* height:70vh; */
 }
+.video{
+    
+    width:95%;
+
+    margin:20px auto;
+}
 
 .the-loai{
     width:90%;
